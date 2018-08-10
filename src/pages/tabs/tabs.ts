@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { AboutPage } from '../about/about';
+import {SettingPage} from "../setting/setting";
 import { ContactPage } from '../contact/contact';
 import { HomePage } from '../home/home';
 
@@ -14,18 +14,18 @@ export class TabsPage {
     this.tabRoots = [
       {
         root: HomePage,
-        tabTitle: 'Home',
+        tabTitle: '微信',
         tabIcon: 'home'
       },
       {
         root: ContactPage,
-        tabTitle: 'Contact',
+        tabTitle: '通讯录',
         tabIcon: 'notifications'
       },
       {
-        root: AboutPage,
-        tabTitle: 'About',
-        tabIcon: 'document'
+        root: SettingPage,
+        tabTitle: '我',
+        tabIcon: 'person'
       }
     ];
   }
