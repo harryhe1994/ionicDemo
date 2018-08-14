@@ -6,11 +6,13 @@ import { MyApp } from './app.component';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
-import {SettingPage} from "../pages/setting/setting";
+import { SettingPage } from "../pages/setting/setting";
 import { TabsPage } from '../pages/tabs/tabs';
+import { CameraPage } from "../pages/camera/camera";
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { Camera } from "@ionic-native/camera";
 
 @NgModule({
   declarations: [
@@ -19,6 +21,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     SettingPage,
     LoginPage,
+    CameraPage,
     TabsPage
   ],
   imports: [
@@ -32,11 +35,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SettingPage,
     HomePage,
     LoginPage,
+    CameraPage,
     TabsPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    Camera,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

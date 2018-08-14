@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import {SettingPage} from "../setting/setting";
 import { ContactPage } from '../contact/contact';
 import { HomePage } from '../home/home';
+import { CameraPage } from "../camera/camera";
 
 @Component({
   templateUrl: 'tabs.html'
@@ -26,6 +27,11 @@ export class TabsPage {
         root: SettingPage,
         tabTitle: '我',
         tabIcon: 'person'
+      },
+      {
+        root: CameraPage,
+        tabTitle: '照相机',
+        tabIcon: 'camera'
       }
     ];
   }
