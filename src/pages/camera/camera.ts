@@ -25,7 +25,7 @@ export class CameraPage {
       quality: 100,
       destinationType: this.camera.DestinationType.DATA_URL,
       sourceType: this.camera.PictureSourceType.CAMERA,
-      allowEdit: false,
+      allowEdit: true,
       encodingType: this.camera.EncodingType.JPEG,
       saveToPhotoAlbum: true,
       mediaType: this.camera.MediaType.PICTURE
