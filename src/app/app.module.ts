@@ -1,6 +1,7 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
+import { HttpClientModule } from "@angular/common/http";
 import { MyApp } from './app.component';
 
 import { ContactPage } from '../pages/contact/contact';
@@ -26,6 +27,7 @@ import { Camera } from "@ionic-native/camera";
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
