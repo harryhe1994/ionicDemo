@@ -1,1 +1,5 @@
-### :point_right: This starter repo has moved to the [ionic-team/starters](https://github.com/ionic-team/starters/tree/master/ionic-angular/official/tabs) repo! :point_left:
+### ionic demo project
+#### 1.npm install all plugins
+#### 2.npm run ionic serve
+#### 3.ionic platform add android
+#### 4.ionic cordova build android
