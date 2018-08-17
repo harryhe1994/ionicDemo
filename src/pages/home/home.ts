@@ -28,9 +28,6 @@ export class HomePage {
 
     this.http.get('https://randomuser.me/api/?results=10')
       .subscribe(data => {
-        console.log(data);
-        // let res = JSON.stringify(data);
-        // console.log(res);
         let listData = data['results'];
         listData.forEach(rec => {
           this.Message.push({header: rec.picture.medium, userName: rec.login.username, content: rec.name.title});
