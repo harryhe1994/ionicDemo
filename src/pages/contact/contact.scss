@@ -9,14 +9,15 @@ page-contact {
     position: fixed;
     right: 5px;
     z-index: 999;
+    margin-top: auto;
   }
-
   .list-bar a {
     text-align: center;
     display: block;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 18px;
     color: #222222;
-    margin-top: 5px;
+    margin-top: -1px;
+    text-decoration: none;
   }
 }
