@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {NavController} from 'ionic-angular';
-import { HttpClient} from "@angular/common/http";
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'page-home',
@@ -25,7 +25,9 @@ export class HomePage {
       userName: 'HAHA',
       content: 'hello'
     });
+  }
 
+  ionViewDidLoad() {
     this.http.get('https://randomuser.me/api/?results=10')
       .subscribe(data => {
         let listData = data['results'];
@@ -33,18 +35,5 @@ export class HomePage {
           this.Message.push({header: rec.picture.medium, userName: rec.login.username, content: rec.name.title});
         });
       });
-
-    // this.http.get('http://ionic.io', {}, {})
-    //   .then(data => {
-    //     console.log(data.status);
-    //     console.log(data.data);
-    //     console.log(data.headers);
-    //   })
-    //   .catch(error => {
-    //     console.log(error.status);
-    //     console.log(error.error);
-    //     console.log(error.headers);
-    //   });
   }
-
 }
