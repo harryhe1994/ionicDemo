@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import {HttpClient} from "@angular/common/http";
-import { HeaderColor } from '@ionic-native/header-color';
 
 @Component({
   selector: 'page-contact',
@@ -15,11 +14,11 @@ export class ContactPage {
   }>;
   Letter: Array<{item: String}>;
 
-  constructor(public navCtrl: NavController, private http: HttpClient, private headerColor: HeaderColor) {
+  constructor(public navCtrl: NavController, private http: HttpClient) {
     this.Friends = [];
     this.Letter = [];
-    this.headerColor.tint('#000000');
   }
+
 
   ionViewDidLoad() {
     this.http.get('https://randomuser.me/api/?results=20')
